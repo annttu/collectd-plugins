@@ -1,0 +1,6 @@
+Collection of collectd plugins
+
+pgstore
+- store data to postgres database
+- written in python
+- uses psycopg2 and threads

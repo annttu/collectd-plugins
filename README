@@ -1,6 +1,12 @@
 == Collection of collectd plugins ==
 
+Author: Antti Jaakkola
+
+== Description ==
+
 Some collectd plugins I have done.
+
+== Content ==
 
 pgstore
 - store data to postgres database

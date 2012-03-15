@@ -116,7 +116,7 @@ def read(data=None):
     for jail in jails:
         v1 = collectd.Values(type='gauge', interval=10)
         v1.plugin='fail2ban-jails-' + jail
-        v1.dispatch(values=client.get_banned(jail))
+        v1.dispatch(values=[client.get_banned(jail)])
 
 collectd.register_read(read)
 collectd.register_init(init)

@@ -24,6 +24,7 @@
 
 import sys, string, os, logging
 import socket
+import collectd
 
 # Inserts our own modules path first in the list
 # fix for bug #343821
@@ -105,6 +106,7 @@ class ServerExecutionException(Exception):
 
 client = None
 def init():
+    global client
     client = Fail2banClient()
     return True
 
